@@ -1,0 +1,54 @@
+.taskContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  padding: 1rem;
+  background-color: var(--gray-500);
+  border-radius: 8px;
+  color: var(--gray-100);
+
+  border: 1px solid var(--gray-400);
+
+  font-size: 0.875rem;
+}
+
+.taskContainer input[type="checkbox"] {
+  cursor: pointer;
+  width: 1rem;
+  height: 1rem;
+}
+
+.strikeThrough {
+  text-decoration: line-through;
+}
+
+.taskContainer button {
+  background: transparent;
+  border: 0;
+  color: var(--gray-300);
+  cursor: pointer;
+  padding: 0.25rem;
+
+
+  line-height: 0;
+  border-radius: 4px;
+
+  transition: background-color 0.1s, color 0.1s;
+}
+
+.taskContainer button:hover {
+  background-color: var(--gray-400);
+  color: var(--danger);
+}
+
+.taskContainer p {
+  flex: 1;
+}
+
+.completed {
+  text-decoration: line-through;
+  border: 0;
+  color: var(--gray-300);
+}
